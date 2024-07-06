@@ -17,20 +17,28 @@ This initial version includes basic functionality for
 
 
 ## Technologies Used
+
+- **Node.js**: Version v20.10.0
+
 ### Client
-- **React**: Version ^18.2.0
-- **react-dom**: Version ^18.2.0
-- **react-router-dom**: Version ^6.23.0
-- **react-router-scripts**: Version 5.0.1
 - **axios**: Version ^1.7.2
+- **react**: Version ^18.3.1
+- **react-dom**: Version ^18.3.1
+- **react-router-dom**: Version ^6.24.1
+- **react-scripts**: Version 5.0.1
 
 ### Server
-- **Node.js**: Version v20.10.0
-- **Express**: Version ^4.19.2
 - **cors**: Version ^2.8.5
+- **express**: Version ^4.19.2
 - **nodemailer**: Version 6.9.14
 - **nodemon**: Version 3.1.4
 
 ## Installation
 To run this project locally, clone the repository and install dependencies using npm:    
 
+## future tasks
+in the future we will make distinct styles for 
+different size screens as defined below
+
+small devices @media (max-width: 1024px)
+desktops: @media (min-with: 1025px)
