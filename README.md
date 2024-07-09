@@ -29,6 +29,7 @@ This initial version includes basic functionality for
 
 ### Server
 - **cors**: Version ^2.8.5
+- **dotenv**: Version ^16.4.5
 - **express**: Version ^4.19.2
 - **nodemailer**: Version 6.9.14
 - **nodemon**: Version 3.1.4

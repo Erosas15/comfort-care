@@ -1,10 +1,11 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Ignore node modules in client folder
+# Ignore in client folder
 /client/node_modules/
 
-# Ignore node modules in server folder
+# Ignore in server folder
 /server/node_modules/
+/server/.env
 
 # dependencies
 /.pnp
