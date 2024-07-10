@@ -5,6 +5,9 @@ import "../styles/homePage.css";
 // imported images
 import HomePage_Photo1 from "./photos/hm-pg-photo1.jpg";
 import HomePage_Photo2 from "./photos/hm-pg-photo2.jpg";
+
+import testphoto from "./photos/plaque_test.jpg";
+
 import axios from "axios";
 
 const HomePageCarousel = ({images}) => {
@@ -143,13 +146,120 @@ const HomePageForm = () => {
     )
 }
 
+const HomePageInfoCards = () => {
+    return (
+        <div className="home-pg-info-card-container">
+            <h2 className="info-card-title">What Is Independent Living?</h2>
+    
+            <div className="info-card-information-container">
+                <div className="info-card-information">
+    
+                    <div className="info-cards">
+                        <img src={testphoto} alt="test"/>
+                        <div className="info-card-subtitle"> Housing Designed for Seniors</div>
+                    </div>
+                    
+                    <div className="info-card-text"> These are often age-restricted 
+                        (usually for individuals aged 55 or older) housing facilities 
+                        like apartments, townhouses, or even single-family homes. 
+                        These residences are designed with the needs of older adults
+                        in mind, often featuring user-friendly, accessible designs 
+                        like single-level living, no-step entries, and wider doorways.
+                    </div>
+                </div>
+    
+                <div className="info-card-information">                    
+                    <img src={testphoto} alt="test"/>
+                    <div className="info-card-subtitle">Maintenance-Free Living</div>
+    
+                    <div className="info-card-text"> 
+                    Independent living facilities typically handle all maintenance tasks,
+                    including lawn care, housekeeping, and repairs. This allows residents
+                    to live without the burden of maintaining a home, which can be physically 
+                    demanding and time-consuming.
+                    </div>
+                </div>
+    
+                <div className="info-card-information">
+                    <img src={testphoto} alt="test"/>
+                    <div className="info-card-subtitle">Community and Social Activities</div>
+    
+                    <div className="info-card-text">
+                    These communities often offer a variety of social, recreational, and 
+                    educational activities. This can include group outings, fitness classes, 
+                    hobby clubs, and events. The goal is to foster a sense of community and 
+                    provide opportunities for residents to engage with each other.
+                    </div>
+                </div>
+    
+                <div className="info-card-information">
+    
+                    <img src={testphoto} alt="test"/>
+                    <div className="info-card-subtitle">Safety and Security</div>
+    
+                    <div className="info-card-text">
+                    Independent living communities are generally equipped with safety features 
+                    such as emergency call systems, security personnel, and secure entrances to 
+                    ensure the safety and well-being of residents. 
+                    </div>
+                </div>
+    
+                <div className="info-card-information">
+    
+                    <img src={testphoto} alt="test"/>
+                    <div className="info-card-subtitle">No Healthcare Services Provided</div>
+    
+                    <div className="info-card-text"> 
+                    Unlike assisted living or nursing homes, independent living communities do not 
+                    typically provide medical care or assistance with daily living activities. 
+                    However, some may offer access to healthcare services if needed.
+                    </div>
+                </div>
+    
+                <div className="info-card-information">
+                    <img src={testphoto} alt="test"/>
+                    <div className="info-card-subtitle">Independence and Self-Sufficiency</div>
+    
+                    <div className="info-card-text"> 
+                    Residents in independent living are usually active and capable of managing their 
+                    day-to-day lives without assistance. They have the freedom to come and go as they 
+                    please and maintain their independence.
+                    </div>
+                </div>
+    
+                <div className="info-card-information">
+                    <img src={testphoto} alt="test"/>
+                    <div className="info-card-subtitle">Amenities and Services</div>
+    
+                    <div className="info-card-text"> 
+                    Many independent living communities offer amenities like dining services, 
+                    transportation, laundry services, and more. These amenities are designed to make 
+                    life more convenient and enjoyable for residents.
+                    </div>
+                </div>
+    
+                <div className="info-card-information">
+                    <img src={testphoto} alt="test"/>
+                    <div className="info-card-subtitle">Community Atmosphere</div>
+    
+                    <div className="info-card-text"> 
+                    These environments often emphasize community and social interaction, providing a 
+                    supportive social network for seniors.
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    );
+    
+}
+
 const HomePage = () => {
 
     const IMAGES = [
         HomePage_Photo1,
         HomePage_Photo2
     ];
-
 
     return (
         <div className="home-pg-container">
@@ -178,6 +288,10 @@ const HomePage = () => {
                 <div className="content-color"/>
 
                 <HomePageForm/>
+
+                <div className="content-color"/>
+
+                <HomePageInfoCards/>
 
             </div>
           

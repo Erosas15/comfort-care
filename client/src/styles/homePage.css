@@ -142,7 +142,7 @@
 .home-pg-form-message{
     margin-bottom: 10px;
     resize: none;
-    border: 2px solid #4e4e4e;
+    border: 2px solid #363636;
     border-radius: 5px;
     padding: 10px;
     font-size: 18px;
@@ -177,4 +177,56 @@
 
 .home-pg-form-feedback-message{
     font-size: 20px;
+}
+
+/* home page info cards */
+
+.info-card-title{
+    margin-top: 3%;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.info-card-information-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+
+}
+
+.info-card-information{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 300px;
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.info-card-information img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.info-card-subtitle{
+    font-size: 22px;
+    margin: 10px 0;
+    /* color: #363636; */
+    text-align: center;
+}
+
+.info-card-text {
+    font-size: 16px;
+    color: #363636
+}
+
+.info-card-information:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    cursor: pointer;
 }
