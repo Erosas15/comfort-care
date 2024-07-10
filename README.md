@@ -12,9 +12,8 @@ and their families.
 
 ## Version 1 Features
 This initial version includes basic functionality for 
-    Page navigation
-    Sending emails to Us
-
+- Page navigation
+- Sending emails to Us
 
 ## Technologies Used
 
@@ -41,5 +40,5 @@ To run this project locally, clone the repository and install dependencies using
 in the future we will make distinct styles for 
 different size screens as defined below
 
-small devices @media (max-width: 1024px)
-desktops: @media (min-with: 1025px)
+- small devices @media (max-width: 1024px)
+- desktops: @media (min-with: 1025px)

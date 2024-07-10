@@ -1,50 +1,15 @@
 import React from "react";
+import axios from "axios";
 import { useState } from "react";
+import ImageCarousel from "./imageCarousel";
+
 import "../styles/homePage.css";
 
 // imported images
 import HomePage_Photo1 from "./photos/hm-pg-photo1.jpg";
 import HomePage_Photo2 from "./photos/hm-pg-photo2.jpg";
-
 import testphoto from "./photos/plaque_test.jpg";
 
-import axios from "axios";
-
-const HomePageCarousel = ({images}) => {
-    const [imageIndex, setImageIndex] = useState(0);
-
-    function showNextImage(){
-        setImageIndex((imageIndex + 1) % images.length);
-    }
-
-    function showPrevImage(){
-        setImageIndex((imageIndex - 1 + images.length) % images.length);
-    }
-
-    function goToImage(index){
-        setImageIndex(index);
-    }
-    
-    return(
-        <div className="home-page-img-carousel">
-            <div className="home-pg-left-arrow" onClick={showPrevImage}>&#x276E;</div>
-
-            <div className="home-pg-right-arrow" onClick={showNextImage}>&#x276F;</div>
-
-            <div style={{backgroundImage: `url(${images[imageIndex]})`}} 
-                className="home-pg-carousel">
-            </div>
-
-            <div className="home-pg-carousel-selector">
-                {images.map((images,imageIndex) => (
-                    <div key={imageIndex} className="home-pg-dot-container" 
-                    onClick={() => goToImage(imageIndex)}>•</div>
-                ))}
-            </div>
-          
-        </div>
-    )
-}
 
 const HomePageForm = () => {
     const [email, setEmail] = useState("");
@@ -256,15 +221,22 @@ const HomePageInfoCards = () => {
 
 const HomePage = () => {
 
-    const IMAGES = [
+    const homePageImages = [
         HomePage_Photo1,
         HomePage_Photo2
     ];
 
+    const [homePageIndex, setHomePageIndex] = useState(0);
+
+
     return (
         <div className="home-pg-container">
             <div className="home-pg-carousel-container">
-                <HomePageCarousel images={IMAGES} />
+                <ImageCarousel 
+                        images={homePageImages} 
+                        carouselIndex={homePageIndex} 
+                        setCarouselIndex={setHomePageIndex} 
+                    />
 
             </div>
         
