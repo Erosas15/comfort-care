@@ -16,14 +16,6 @@
     margin: 5%;
 }
 
-.content-color{
-    width: 80%;
-    height: 10px;
-    background-color: #b3cde0;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
 .home-pg-text{
     font-size: 200%;
     margin-left: 15%;
@@ -138,6 +130,12 @@
 
 }
 
+.info-card-link{
+    text-decoration: none; 
+    color: inherit; 
+    display: block;  
+}
+
 .info-card-information{
     background-color: #fff;
     border-radius: 10px;
@@ -159,6 +157,7 @@
     /* color: #363636; */
     text-align: center;
 }
+
 
 .info-card-text {
     font-size: 16px;

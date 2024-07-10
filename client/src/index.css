@@ -4,3 +4,10 @@ body {
     color: #222222;
 }
   
+.content-color{
+    width: 80%;
+    height: 10px;
+    background-color: #b3cde0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
