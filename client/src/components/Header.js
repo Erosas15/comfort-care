@@ -10,11 +10,18 @@ const Header = () => {
 
             <div className="header-top"> 
                 <div className="header-left">
-                    <div className="logo">
-                        <img src={logo} alt="LOGO"/>
-                    </div>
+                    
+                    <Link to="/" className="logo-nav">
+                        <div className="company-name-container">
+                            <div className="logo">
+                                <img src={logo} alt="LOGO"/>
+                            </div>
 
-                    <div className="company-name">Comfort Care 24/7 </div>
+                            <div className="company-name">Comfort Care 24/7 </div>
+                        </div>
+
+                    </Link>
+                   
                 </div>
 
                 <div className="header-right">

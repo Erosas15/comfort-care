@@ -1,4 +1,4 @@
-.header-color{
+/* .header-color{
     height: 25px;
     background-color: #b3cde0;
 }
@@ -38,9 +38,17 @@
     justify-content: center;
 }
 
+.logo-nav{
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.company-name-container{
+    margin-left: 15%;
+}
+
 .logo{
-    width: 40%;
-    margin-right: 45%;
+    width: 50%;
 }
 .logo img {
     width:100%
@@ -48,9 +56,7 @@
 
 .company-name{
     font-size: 150%;
-    margin-right: 45%;
 }
-
 
 .nav-header {
     display: flex;
@@ -74,4 +80,91 @@
 .nav-item-header:hover {
     background-color: transparent; 
     color: #3e2723; 
+} */
+
+.header-color {
+    height: 25px;
+    background-color: #b3cde0;
+}
+
+.header {
+    background-color: #f7f7f7;
+    color: #222222;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1%;
+}
+
+.header-right {
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.subtext {
+    font-size: 120%;
+}
+
+.phone-number {
+    font-size: 250%;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%; /* Adjust as needed to align */
+}
+
+.logo-nav {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 250px; 
+    height: auto;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.company-name {
+    font-size: 150%;
+    text-align: center; 
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-bottom: 1%;
+    width: 60%;
+}
+
+.nav-item-header {
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 20px;
+    background-color: transparent;
+    outline: none;
+}
+
+.nav-item-header:focus,
+.nav-item-header:active,
+.nav-item-header:hover {
+    background-color: transparent;
+    color: #3e2723;
 }
