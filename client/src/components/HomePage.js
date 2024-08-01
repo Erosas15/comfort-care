@@ -6,9 +6,20 @@ import ImageCarousel from "./ImageCarousel";
 import "../styles/homePage.css";
 
 // imported images
-import HomePage_Photo1 from "./photos/hm-pg-photo1.jpg";
-import HomePage_Photo2 from "./photos/hm-pg-photo2.jpg";
-import testphoto from "./photos/plaque_test.jpg";
+import HomePage_Carousel1 from "./photos/home_pg/hm-pg-1.png";
+import HomePage_Carousel2 from "./photos/home_pg/hm-pg-2.png";
+import HomePage_Carousel3 from "./photos/home_pg/hm-pg-3.png";
+import HomePage_Carousel4 from "./photos/home_pg/hm-pg-4.png";
+
+import HomePage_Plaque1 from "./photos/home_pg/hm-pg-plaque-1.png";
+import HomePage_Plaque2 from "./photos/home_pg/hm-pg-plaque-2.png";
+import HomePage_Plaque3 from "./photos/home_pg/hm-pg-plaque-3.png";
+import HomePage_Plaque4 from "./photos/home_pg/hm-pg-plaque-4.png";
+import HomePage_Plaque5 from "./photos/home_pg/hm-pg-plaque-5.png";
+import HomePage_Plaque6 from "./photos/home_pg/hm-pg-plaque-6.png";
+import HomePage_Plaque7 from "./photos/home_pg/hm-pg-plaque-7.png";
+import HomePage_Plaque8 from "./photos/home_pg/hm-pg-plaque-8.png";
+
 
 
 const HomePageForm = () => {
@@ -122,13 +133,12 @@ const HomePageInfoCards = () => {
                     <div className="info-card-information">
         
                         <div className="info-cards">
-                            <img src={testphoto} alt="test"/>
+                            <img src={HomePage_Plaque1} alt="test"/>
                             <div className="info-card-subtitle"> Housing Designed for Seniors</div>
                         </div>
                         
                         <div className="info-card-text"> These are often age-restricted 
-                            (usually for individuals aged 55 or older) housing facilities 
-                            like apartments, townhouses, or even single-family homes. 
+                            housing facilities like apartments, townhouses, or even single-family homes. 
                             These residences are designed with the needs of older adults
                             in mind, often featuring user-friendly, accessible designs 
                             like single-level living, no-step entries, and wider doorways.
@@ -138,7 +148,7 @@ const HomePageInfoCards = () => {
 
                 <Link to="/independent-living?index=1" className="info-card-link">
                     <div className="info-card-information">                    
-                        <img src={testphoto} alt="test"/>
+                        <img src={HomePage_Plaque2} alt="test"/>
                         <div className="info-card-subtitle">Maintenance-Free Living</div>
         
                         <div className="info-card-text"> 
@@ -152,7 +162,7 @@ const HomePageInfoCards = () => {
     
                 <Link to="/independent-living?index=2" className="info-card-link">
                     <div className="info-card-information">
-                        <img src={testphoto} alt="test"/>
+                        <img src={HomePage_Plaque3} alt="test"/>
                         <div className="info-card-subtitle">Community and Social Activities</div>
         
                         <div className="info-card-text">
@@ -167,7 +177,7 @@ const HomePageInfoCards = () => {
                 <Link to="/independent-living?index=3" className="info-card-link">
                     <div className="info-card-information">
         
-                        <img src={testphoto} alt="test"/>
+                        <img src={HomePage_Plaque4} alt="test"/>
                         <div className="info-card-subtitle">Safety and Security</div>
         
                         <div className="info-card-text">
@@ -181,7 +191,7 @@ const HomePageInfoCards = () => {
                 <Link to="/independent-living?index=4" className="info-card-link">
                     <div className="info-card-information">
         
-                        <img src={testphoto} alt="test"/>
+                        <img src={HomePage_Plaque5} alt="test"/>
                         <div className="info-card-subtitle">No Healthcare Services Provided</div>
         
                         <div className="info-card-text"> 
@@ -194,7 +204,7 @@ const HomePageInfoCards = () => {
   
                 <Link to="/independent-living?index=5" className="info-card-link">
                     <div className="info-card-information">
-                        <img src={testphoto} alt="test"/>
+                        <img src={HomePage_Plaque6} alt="test"/>
                         <div className="info-card-subtitle">Independence and Self-Sufficiency</div>
         
                         <div className="info-card-text"> 
@@ -207,7 +217,7 @@ const HomePageInfoCards = () => {
     
                 <Link to="/independent-living?index=6" className="info-card-link">
                     <div className="info-card-information">
-                        <img src={testphoto} alt="test"/>
+                        <img src={HomePage_Plaque7} alt="test"/>
                         <div className="info-card-subtitle">Amenities and Services</div>
         
                         <div className="info-card-text"> 
@@ -220,7 +230,7 @@ const HomePageInfoCards = () => {
 
                 <Link to="/independent-living?index=7" className="info-card-link">
                     <div className="info-card-information">
-                        <img src={testphoto} alt="test"/>
+                        <img src={HomePage_Plaque8} alt="test"/>
                         <div className="info-card-subtitle">Community Atmosphere</div>
         
                         <div className="info-card-text"> 
@@ -239,18 +249,24 @@ const HomePageInfoCards = () => {
 const HomePage = () => {
 
     const homePageImages = [
-        HomePage_Photo1,
-        HomePage_Photo2
+        HomePage_Carousel1,
+        HomePage_Carousel2,
+        HomePage_Carousel3,
+        HomePage_Carousel4
     ];
 
     const homePageTitle = [
+        "Comfort Care 24/7 LLC",
+        "Comfort Care 24/7 LLC",
         "Comfort Care 24/7 LLC",
         "Comfort Care 24/7 LLC"
     ]
 
     const homePageSubtext =[
-        "IDK Yet i will fix this later",
-        "IDK Yet i will fix this later"
+        "Compassionate Care, Every Hour, Every Day",
+        "Compassionate Care, Every Hour, Every Day",
+        "Compassionate Care, Every Hour, Every Day",
+        "Compassionate Care, Every Hour, Every Day",
     ]
 
     const [homePageIndex, setHomePageIndex] = useState(0);
