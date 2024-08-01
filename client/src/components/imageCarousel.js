@@ -1,7 +1,7 @@
 import "../styles/imageCarousel.css"
 import React from "react";
 
-const ImageCarousel = ({images, carouselTitles ,carouselSubText ,carouselIndex, setCarouselIndex}) => {
+const ImageCarousel = ({images, carouselTitles ,carouselIndex, setCarouselIndex}) => {
 
     function showNextImage() {
         setCarouselIndex((carouselIndex + 1) % images.length);
@@ -35,7 +35,6 @@ const ImageCarousel = ({images, carouselTitles ,carouselSubText ,carouselIndex, 
             <div className="carousel-text">
                     <h2 className="carousel-titles">{carouselTitles[carouselIndex]}</h2>
 
-                    <p1 className="carousel-subtext">{carouselSubText[carouselIndex]}</p1>
             </div>
 
         </div>

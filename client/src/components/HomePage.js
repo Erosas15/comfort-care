@@ -6,10 +6,10 @@ import ImageCarousel from "./ImageCarousel";
 import "../styles/homePage.css";
 
 // imported images
-import HomePage_Carousel1 from "./photos/home_pg/hm-pg-1.png";
-import HomePage_Carousel2 from "./photos/home_pg/hm-pg-2.png";
-import HomePage_Carousel3 from "./photos/home_pg/hm-pg-3.png";
-import HomePage_Carousel4 from "./photos/home_pg/hm-pg-4.png";
+import Carousel1 from "./photos/carousel/carousel-1.png";
+import Carousel2 from "./photos/carousel/carousel-2.png";
+import Carousel3 from "./photos/carousel/carousel-3.png";
+import Carousel4 from "./photos/carousel/carousel-4.png";
 
 import HomePage_Plaque1 from "./photos/home_pg/hm-pg-plaque-1.png";
 import HomePage_Plaque2 from "./photos/home_pg/hm-pg-plaque-2.png";
@@ -249,10 +249,10 @@ const HomePageInfoCards = () => {
 const HomePage = () => {
 
     const homePageImages = [
-        HomePage_Carousel1,
-        HomePage_Carousel2,
-        HomePage_Carousel3,
-        HomePage_Carousel4
+        Carousel1,
+        Carousel2,
+        Carousel3,
+        Carousel4,
     ];
 
     const homePageTitle = [
@@ -262,23 +262,16 @@ const HomePage = () => {
         "Comfort Care 24/7 LLC"
     ]
 
-    const homePageSubtext =[
-        "Compassionate Care, Every Hour, Every Day",
-        "Compassionate Care, Every Hour, Every Day",
-        "Compassionate Care, Every Hour, Every Day",
-        "Compassionate Care, Every Hour, Every Day",
-    ]
-
     const [homePageIndex, setHomePageIndex] = useState(0);
 
-
+    const whatIsComfortCare = "At Comfort Care 24/7, compassion is our guiding principle. We pride ourselves on providing compassionate care to our residents round the clock. Our dedicated team is committed to ensuring the comfort and well-being of each individual under our care, treating them with the kindness and respect they deserve. Whether you're considering assisted living or memory care for yourself or a loved one, we're here to offer support and guidance every step of the way. With locations across several states, we strive to create a warm and welcoming environment where residents feel valued and cared for."
+    
     return (
         <div className="home-pg-container">
             <div className="home-pg-carousel-container">
                 <ImageCarousel 
                         images={homePageImages} 
                         carouselTitles={homePageTitle}
-                        carouselSubText={homePageSubtext}
                         carouselIndex={homePageIndex} 
                         setCarouselIndex={setHomePageIndex} 
                     />
@@ -291,15 +284,7 @@ const HomePage = () => {
                 <div className="content-color"/>
 
                 <div className="home-pg-text">
-                At Comfort Care 24/7, compassion is our guiding principle. We pride 
-                ourselves on providing compassionate care to our residents round the 
-                clock. Our dedicated team is committed to ensuring the comfort and 
-                well-being of each individual under our care, treating them with the
-                 kindness and respect they deserve. Whether you're considering assisted 
-                 living or memory care for yourself or a loved one, we're here to offer 
-                 support and guidance every step of the way. With locations across 
-                 several states, we strive to create a warm and welcoming environment
-                  where residents feel valued and cared for.
+                    {whatIsComfortCare}
                 </div>
 
                 <div className="content-color"/>

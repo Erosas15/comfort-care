@@ -3,7 +3,10 @@ import { useLocation } from "react-router-dom";
 import "../styles/independentLivingPage.css";
 import ImageCarousel from "./ImageCarousel";
 
-import Indenpend_Photo1 from "./photos/independentLiving_pg/independ-pg-1.jpg";
+import Carousel1 from "./photos/carousel/carousel-1.png";
+import Carousel2 from "./photos/carousel/carousel-2.png";
+import Carousel3 from "./photos/carousel/carousel-3.png";
+import Carousel4 from "./photos/carousel/carousel-4.png";
 
 
 const CareSection = ({ independPageIndex, image }) => {
@@ -38,14 +41,14 @@ const IndependentLivingPage = () => {
   const [independPageIndex, setIndependPageIndex] = useState(initialIndex);
 
   const independPageImages = [
-    Indenpend_Photo1,
-    Indenpend_Photo1,
-    Indenpend_Photo1,
-    Indenpend_Photo1,
-    Indenpend_Photo1,
-    Indenpend_Photo1,
-    Indenpend_Photo1,
-    Indenpend_Photo1,
+    Carousel1,
+    Carousel2,
+    Carousel3,
+    Carousel4,
+    Carousel1,
+    Carousel2,
+    Carousel3,
+    Carousel4,
   ];
 
   const independLivingTitles = [
@@ -57,10 +60,6 @@ const IndependentLivingPage = () => {
     "Independence and Self-Sufficiency",
     "Amenities and Services",
     "Community Atmosphere",
-  ];
-
-  const independLivingSubtext = [
-    ""
   ];
 
   const independLivingSubTitles = [
@@ -80,7 +79,6 @@ const IndependentLivingPage = () => {
         <ImageCarousel
           images={independPageImages}
           carouselTitles={independLivingTitles}
-          carouselSubText={independLivingSubtext}
           carouselIndex={independPageIndex}
           setCarouselIndex={setIndependPageIndex}
         />

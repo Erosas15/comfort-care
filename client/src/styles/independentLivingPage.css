@@ -23,28 +23,28 @@
 /* independent living page care section */
 
 .care-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
   
-  .care-text {
+.care-text {
+  flex: 1;
+  padding: 20px;
+  font-size: 30px;
+  line-height: 1.6;
+  color: #333;
+}
+  
+.care-image {
     flex: 1;
     padding: 20px;
-    font-size: 30px;
-    line-height: 1.6;
-    color: #333;
-  }
+}
   
-  .care-image {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  .care-image img {
+.care-image img {
     width: 100%;
     height: auto;
     border-radius: 10px;
-  }
+}
   
